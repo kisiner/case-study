@@ -14,6 +14,7 @@ bonds = pd.read_excel('./bonds.xlsx', usecols = 'A:E,H:M',index_col=None)
 cds = pd.read_excel('./cds_by_countries.xlsx' ,sheet_name = periods_cds, header=None, names = columns_inf, skiprows=5, usecols = 'B,D:G,J:M')
 
 ###################################Data cleaning###################################
+#
 
 bonds['Today'] = None
 bonds['Today'] = pd.to_datetime('2023-11-24')
